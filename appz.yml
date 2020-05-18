@@ -1,0 +1,36 @@
+app:
+  name: Helm Test
+  code: HelmTest
+  notify: appzdev@cloudbourne.co
+    
+build:
+  version: 3.1
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: helm-3.1
+  image_name: alpha/helm-test
+    
+deploy:
+  context: alpha/DEV
+  replicas: 1
+  port:
+  - 80
+    
+monitor:
+  notify: appzops@cloudbourne.co      
+    
+properties:
+  AWS_ACCESS_KEY_ID: 
+    vault: AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY:
+    vault: AWS_SECRET_ACCESS_KEY
+  AWS_DEFAULT_REGION: us-east-2
+  KUBECONFIG:
+    vault: KUBECONFIG
+  VALUES_YAML: values.yaml
+  NAMESPACE: staging-helm-test
+  APPZ_APP_NAME: helm-test-v1
+  COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
+  APPZ_TEARDOWN_TOKEN: 20200518-1535
+  revision : 50
