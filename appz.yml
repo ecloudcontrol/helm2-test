@@ -33,4 +33,4 @@ properties:
   APPZ_APP_NAME: helm-test-v1
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   APPZ_TEARDOWN_TOKEN: 20200519-1730
-  revision : 59
+  revision : 60
