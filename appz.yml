@@ -30,7 +30,6 @@ properties:
     vault: KUBECONFIG
   VALUES_YAML: values.yaml
   NAMESPACE: staging-helm-test
-  APPZ_APP_NAME: helm-test-v1
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   APPZ_TEARDOWN_TOKEN: 20200518-2125
   revision : 56
