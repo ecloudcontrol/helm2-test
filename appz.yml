@@ -32,4 +32,4 @@ properties:
   NAMESPACE: staging-helm-test
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   APPZ_TEARDOWN_TOKEN: 20200522-1605
-  revision : 26
+  revision : 27
