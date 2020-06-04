@@ -31,5 +31,5 @@ properties:
   VALUES_YAML: values.yaml
   NAMESPACE: staging-helm-test
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
-  APPZ_TEARDOWN_TOKEN: 20200522-1640
+  APPZ_TEARDOWN_TOKEN: 20200604-1825
   revision : 29
