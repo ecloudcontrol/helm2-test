@@ -28,7 +28,7 @@ properties:
   AWS_DEFAULT_REGION: us-east-2
   KUBECONFIG:
     vault: KUBECONFIG
-  VALUES_YAML: values.yaml
+  VALUES_YAML: config/values1.yaml,config/values2.yaml
   NAMESPACE: staging-helm-test
   POST_INSTALL_SCRIPT: helm_post_validate.sh
   DELETE_NAMESPACE_ON_TEARDOWN: true
