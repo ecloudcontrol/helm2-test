@@ -33,5 +33,5 @@ properties:
   POST_INSTALL_SCRIPT: helm_post_validate.sh
   DELETE_NAMESPACE_ON_TEARDOWN: true
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
-  APPZ_TEARDOWN_TOKEN: 20200606-0235
+  APPZ_TEARDOWN_TOKEN: 20200606-0250
   revision : 33
