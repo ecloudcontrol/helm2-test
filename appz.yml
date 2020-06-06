@@ -35,3 +35,10 @@ properties:
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   APPZ_TEARDOWN_TOKEN: 20200606-0255
   revision : 33
+  
+helm:
+  repos:
+  - name: googleapis
+    repository: https://kubernetes-charts.storage.googleapis.com/
+  - name: elastic
+    repository: https://helm.elastic.co/
