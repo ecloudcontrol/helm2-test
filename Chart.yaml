@@ -25,9 +25,9 @@ appVersion: 1.16.0
 dependencies:
   - name: postgresql
     version: 6.5.0
-    repository: @stt
+    repository: stt
     condition: postgresql.enabled
   - name: redis
     version: 9.3.2
-    repository: @stt
+    repository: stt
     condition: redis.enabled
