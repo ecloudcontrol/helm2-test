@@ -36,6 +36,8 @@ properties:
   
 helm:
   repos:
+  - name: stt
+    repository: https://kubernetes-charts.storage.googleapis.com/
   - name: googleapis
     repository: https://kubernetes-charts.storage.googleapis.com/
   - name: elastic
