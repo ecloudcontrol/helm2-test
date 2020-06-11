@@ -4,11 +4,11 @@ app:
   notify: appzdev@cloudbourne.co
     
 build:
-  version: 3.1
+  version: 2.16
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: helm-3.1
+  image_template: helm-2.16
   image_name: alpha/helm-test
     
 deploy:
