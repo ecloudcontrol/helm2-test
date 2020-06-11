@@ -1,6 +1,6 @@
 app:
-  name: Helm Test
-  code: HelmTest
+  name: Helm2 Test
+  code: Helm2Test
   notify: appzdev@cloudbourne.co
     
 build:
@@ -9,7 +9,7 @@ build:
   build_file: none
   output_files: output/*.zip
   image_template: helm-2.16
-  image_name: alpha/helm-test
+  image_name: alpha/helm2-test
     
 deploy:
   context: alpha/DEV
@@ -21,23 +21,18 @@ monitor:
   notify: appzops@cloudbourne.co      
     
 properties:
-  AWS_ACCESS_KEY_ID: 
-    vault: AWS_ACCESS_KEY_ID
-  AWS_SECRET_ACCESS_KEY:
-    vault: AWS_SECRET_ACCESS_KEY
-  AWS_DEFAULT_REGION: us-east-2
   KUBECONFIG:
     vault: KUBECONFIG
-  VALUES_YAML: values.yaml
+  VALUES_YAML: config/values1.yaml,config/values2.yaml
   NAMESPACE: staging-helm-test
+  POST_INSTALL_SCRIPT: helm_post_validate.sh
+  DELETE_NAMESPACE_ON_TEARDOWN: true
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
-  APPZ_TEARDOWN_TOKEN: 20200518-2125
-  revision : 27
+  APPZ_TEARDOWN_TOKEN: 20200606-0255
+  revision : 34
   
 helm:
   repos:
-  - name: stt
-    repository: https://kubernetes-charts.storage.googleapis.com/
   - name: googleapis
     repository: https://kubernetes-charts.storage.googleapis.com/
   - name: elastic
