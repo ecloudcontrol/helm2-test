@@ -24,7 +24,7 @@ properties:
   KUBECONFIG:
     vault: KUBECONFIG
   VALUES_YAML: config/values1.yaml,config/values2.yaml
-  NAMESPACE: staging-helm-test
+  NAMESPACE: helm2-test
   POST_INSTALL_SCRIPT: helm_post_validate.sh
   DELETE_NAMESPACE_ON_TEARDOWN: true
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
