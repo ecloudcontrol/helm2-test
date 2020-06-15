@@ -77,3 +77,10 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+elasticsearch:
+   enabled: true
+postgresql:
+   enabled: true
+redis:
+   enabled: true
