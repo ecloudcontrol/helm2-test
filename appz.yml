@@ -11,7 +11,7 @@ build:
   image_template: helm-2.16
   image_name: alpha/helm2-test
   args:
-    HELM_REPO_ADD: true
+    HELM_REPO_ADD : true
     
 deploy:
   context: alpha/DEV
