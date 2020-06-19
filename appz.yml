@@ -31,7 +31,7 @@ properties:
   DELETE_NAMESPACE_ON_TEARDOWN: true
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   APPZ_TEARDOWN_TOKEN: 20200612-1920
-  revision : 43
+  revision : 44
   
 helm:
   repos:
